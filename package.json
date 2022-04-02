@@ -2,9 +2,9 @@
   "name": "juicebox",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "scripts": {
+      "seed:dev": "nodemon ./db/seed.js"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,5 +16,11 @@
     "url": "https://github.com/BBee8/juicebox/issues"
   },
   "homepage": "https://github.com/BBee8/juicebox#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
